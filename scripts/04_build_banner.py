@@ -77,10 +77,10 @@ FIELDS = [
 
 HANDLE = "@gudshuis"
 
-ROW_FONT = 14
-HEADER_FONT = 13
-ROW_SPACING = 23
-CHAR_W = 7.3  # approx monospace advance at 14px
+ROW_FONT = 17
+HEADER_FONT = 16
+ROW_SPACING = 28
+CHAR_W = ROW_FONT * 0.521  # approx monospace advance ratio
 
 
 def data_uri(path: str) -> str:
@@ -191,7 +191,8 @@ def build_info_panel(pal: dict, panel_box) -> str:
             )
         parts.append(
             f'<text x="{x1}" y="{y}" font-size="{ROW_FONT}" fill="{pal["text"]}" '
-            f'font-family="SFMono-Regular, Consolas, monospace" text-anchor="end" '
+            f'font-family="SFMono-Regular, Consolas, monospace" font-weight="500" '
+            f'text-anchor="end" '
             f'textLength="{value_w:.1f}" lengthAdjust="spacingAndGlyphs">{esc(value)}</text>'
         )
     return "\n".join(parts)
