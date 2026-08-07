@@ -26,11 +26,13 @@
 ### Stack
 
 <!--
-  Using the public github-readme-stats/shields instances below so this
-  renders immediately. Swap to your self-hosted Vercel instance once
-  deployed (fork anuraghazra/github-readme-stats, deploy on Vercel, add
-  env var PAT_1 with a classic token, repo scope) — replace every
-  "github-readme-stats.vercel.app" below with your instance domain.
+  github-readme-stats.vercel.app and github-profile-trophy.vercel.app
+  (the "default" public instances) were confirmed down (503 / 402) when
+  this was built. Using third-party mirrors below as a stopgap — same
+  overload/shutdown risk applies to them too. Self-host on your own
+  Vercel for a durable fix (fork anuraghazra/github-readme-stats, deploy,
+  add env var PAT_1 with a classic token, repo scope) and swap the
+  domains below to your instance.
 -->
 
 <table align="center">
@@ -241,8 +243,8 @@ Professional description goes here.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=gudshuis&show_icons=true&hide_rank=true&theme=transparent&title_color=7C3AED&icon_color=6366F1&text_color=24292f&border_color=d0d7de" width="49%">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gudshuis&layout=compact&hide_rank=true&theme=transparent&title_color=7C3AED&text_color=24292f&border_color=d0d7de" width="49%">
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=gudshuis&show_icons=true&hide_rank=true&theme=transparent&title_color=7C3AED&icon_color=6366F1&text_color=24292f&border_color=d0d7de" width="49%">
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gudshuis&layout=compact&hide_rank=true&theme=transparent&title_color=7C3AED&text_color=24292f&border_color=d0d7de" width="49%">
 
 <img src="https://streak-stats.demolab.com/?user=gudshuis&theme=default&hide_border=true&background=FFFFFF&ring=7C3AED&fire=6366F1&currStreakLabel=4338CA" width="100%">
 
@@ -257,7 +259,7 @@ Professional description goes here.
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=gudshuis&theme=algolia&no-frame=true&margin-w=8&column=7" width="100%">
+<img src="https://github-trophies.vercel.app/?username=gudshuis&theme=algolia&no-frame=true&margin-w=8&column=7" width="100%">
 
 </div>
 
