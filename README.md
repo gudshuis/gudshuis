@@ -176,8 +176,7 @@ platform-engineering practice.
 
 <div align="center">
 
-<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=gudshuis&show_icons=true&hide_rank=true&theme=transparent&bg_color=0A101F&title_color=39D353&icon_color=39D353&text_color=C9D1D9&border_color=30363D" width="49%">
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gudshuis&layout=compact&hide_rank=true&theme=transparent&bg_color=0A101F&title_color=39D353&text_color=C9D1D9&border_color=30363D" width="49%">
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=gudshuis&show_icons=true&hide_rank=true&theme=transparent&bg_color=0A101F&title_color=39D353&icon_color=39D353&text_color=C9D1D9&border_color=30363D" width="70%">
 
 <img src="https://streak-stats.demolab.com/?user=gudshuis&hide_border=true&background=0A101F&ring=39D353&fire=39D353&currStreakLabel=39D353&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E&stroke=30363D" width="100%">
 
