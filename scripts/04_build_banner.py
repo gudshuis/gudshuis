@@ -21,8 +21,20 @@ LOGO_FILES = [
     os.path.join(LOGOS_DIR, "kubernetes/kubernetes.svg"),
     "assets/mcp-icon.svg",
     os.path.join(LOGOS_DIR, "ai/rag.svg"),
+    "assets/anthropic-icon.svg",
 ]
-LOGO_LABELS = ["Kubernetes", "MCP", "RAG"]
+LOGO_LABELS = ["Kubernetes", "MCP", "RAG", "Anthropic"]
+
+# portrait: 3.0s hold, then 4 logos. Each logo's fade-out window IS the next
+# logo's fade-in window (shared, not additive) — so total length is
+# 7.6 + (n-1)*3.3, not a simple sum of per-logo durations.
+LOGO_WINDOWS = [
+    (3.0, 4.3, 6.3, 7.6),
+    (6.3, 7.6, 9.6, 10.9),
+    (9.6, 10.9, 12.9, 14.2),
+    (12.9, 14.2, 16.2, 17.5),
+]
+LOOP_DUR = LOGO_WINDOWS[-1][-1]
 
 WIDTH, HEIGHT = 1180, 610
 PORTRAIT_BOX = (40, 90, 448, 560)  # x0,y0,x1,y1 inside the window
@@ -131,8 +143,9 @@ def build_portrait_group(prepped_png: str, pal: dict, box, invert: bool) -> str:
     parts.append("</svg>")
 
     # Loop: whole-portrait fade out/in, composited with the per-dot intro above.
-    loop_dur = 14.2
-    kt = [0, 3.0/loop_dur, 4.3/loop_dur, 12.9/loop_dur, 14.2/loop_dur, 1.0]
+    loop_dur = LOOP_DUR
+    last_a2, last_a3 = LOGO_WINDOWS[-1][2], LOGO_WINDOWS[-1][3]
+    kt = [0, 3.0/loop_dur, 4.3/loop_dur, last_a2/loop_dur, last_a3/loop_dur, 1.0]
     vals = "1;1;0;0;1;1"
     parts.append(
         f'<animate attributeName="opacity" begin="3.2s" dur="{loop_dur}s" '
@@ -148,10 +161,8 @@ def build_logo_layer(logo_path: str, idx: int, box) -> str:
     box_w, box_h = x1 - x0, y1 - y0
     uri = data_uri(logo_path)
     pad = box_w * 0.18
-    loop_dur = 14.2
-    # Each logo has its own hold window; see timeline comment in main().
-    windows = [(3.0, 4.3, 6.3, 7.6), (6.3, 7.6, 9.6, 10.9), (9.6, 10.9, 12.9, 14.2)]
-    a0, a1, a2, a3 = windows[idx]
+    loop_dur = LOOP_DUR
+    a0, a1, a2, a3 = LOGO_WINDOWS[idx]
     kt = [0, a0/loop_dur, a1/loop_dur, a2/loop_dur, a3/loop_dur, 1.0]
     vals = "0;0;1;1;0;0"
     return (
