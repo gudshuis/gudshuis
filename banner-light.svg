@@ -7,11 +7,11 @@
 <circle cx="46" cy="22" r="6" fill="#ffbd2e"/>
 <circle cx="66" cy="22" r="6" fill="#27c93f"/>
 <text x="590.0" y="27" font-size="13" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" text-anchor="middle">profile.sh --live</text>
-<rect x="36" y="86" width="416" height="478" rx="8" fill="#FFFFFF" stroke="#0891B2" stroke-width="1.5"/>
-<text x="40" y="76" font-size="16" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace" font-weight="600">VISUAL.MAP</text>
+<rect x="36" y="86" width="416" height="478" rx="8" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+<text x="40" y="76" font-size="16" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace" font-weight="600">VISUAL.MAP</text>
 <g id="portraitDots">
 <svg x="40" y="90" width="408" height="470" viewBox="0 0 300 340" preserveAspectRatio="xMidYMid meet">
-<style>path { fill: #7C3AED; }</style>
+<style>path { fill: #15803D; }</style>
 <path d="M236 273h1v1h-1ZM173 249h1v1h-1ZM219 86h1v1h-1ZM216 230h1v1h-1ZM283 81h1v1h-1ZM80 254h1v1h-1ZM104 201h1v1h-1ZM276 245h1v1h-1Z" shape-rendering="crispEdges" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.000s" dur="1.2s" fill="freeze"/></path>
 <path d="M276 280h1v1h-1ZM108 207h1v1h-1ZM229 238h1v1h-1ZM145 288h1v1h-1ZM262 267h1v1h-1ZM290 221h1v1h-1ZM213 184h1v1h-1ZM130 263h1v1h-1Z" shape-rendering="crispEdges" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.000s" dur="1.2s" fill="freeze"/></path>
 <path d="M271 217h1v1h-1ZM242 277h1v1h-1ZM262 49h1v1h-1ZM11 324h1v1h-1ZM160 265h1v1h-1ZM235 318h1v1h-1Z" shape-rendering="crispEdges" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.000s" dur="1.2s" fill="freeze"/></path>
@@ -2087,56 +2087,56 @@
 <image x="113.4" y="163.4" width="261.1" height="323.1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyAtLT4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjgzOXB4IiBoZWlnaHQ9IjEwODJweCIgc2hhcGUtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGltYWdlLXJlbmRlcmluZz0ib3B0aW1pemVRdWFsaXR5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCINCnZpZXdCb3g9IjAgMCAyODI3Ljg0IDEwNzcuODIiDQogeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KIDxnIGlkPSJFYmVuZV94MDAyMF8xIj4NCiAgPG1ldGFkYXRhIGlkPSJDb3JlbENvcnBJRF8wQ29yZWwtTGF5ZXIiLz4NCiAgPHBvbHlnb24gZmlsbD0iI0ZDRDkwMCIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjE5NDYuNjUsMTA3Ny44MiAyODI3Ljg0LDEwNzcuODIgMjgyNy44NCwxMDI3LjMzIDE5NDYuNjUsMTAyNy4zMyAiLz4NCiAgPHBvbHlnb24gZmlsbD0iI0RBMjUxRCIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9Ijk3My4wNywxMDc3LjgyIDE4NTQuMjUsMTA3Ny44MiAxODU0LjI1LDEwMjcuMzMgOTczLjA3LDEwMjcuMzMgIi8+DQogIDxwb2x5Z29uIGZpbGw9IiMxRjFBMTciIGZpbGwtcnVsZT0ibm9uemVybyIgcG9pbnRzPSIwLDEwNzcuODIgODgxLjE5LDEwNzcuODIgODgxLjE5LDEwMjcuMzMgMCwxMDI3LjMzICIvPg0KICA8cG9seWdvbiBmaWxsPSJibGFjayIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjE5NDYuNjUsODgxLjE5IDI4MjcuODQsODgxLjE5IDI4MjcuODQsMCAxOTQ2LjY1LDAgIi8+DQogIDxwb2x5Z29uIGZpbGw9ImJsYWNrIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHBvaW50cz0iMCw4ODEuMTkgODgxLjE5LDg4MS4xOSA4ODEuMTksMCAwLDAgIi8+DQogIDxwb2x5Z29uIGZpbGw9ImJsYWNrIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHBvaW50cz0iOTczLjA3LDg4MS4xOSAxODU0LjI1LDg4MS4xOSAxODU0LjI1LDAgOTczLjA3LDAgIi8+DQogIDxwYXRoIGZpbGw9IndoaXRlIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0yNjY1LjYxIDI4MS4wNjFjMCwtNDUuNzk0NSAtMzcuMDk3MiwtODIuODkxNyAtODIuODk5OSwtODIuODkxN2wtMzkwLjk0NCAwYy00NS43OTQ1LDAgLTgyLjg5MTcsMzcuMDk3MiAtODIuODkxNyw4Mi44OTE3bDAgMzE1Ljk0OGMwLDQ1LjgwMjcgMzcuMDk3Miw4Mi44OTk5IDgyLjg5MTcsODIuODk5OWwzOTAuOTQ0IDBjNDUuODAyNywwIDgyLjg5OTksLTM3LjA5NzIgODIuODk5OSwtODIuODYzNGwwIC0xOTMuNDIxIC0yODIuNjcgMCAwIDgyLjg5MTcgMTc4LjMwMSAwIDAgMTEwLjUyOSAtMzQ3Ljk3IDAgMCAtMzE1Ljk4NSAzNDcuOTcgMCAwIDUxLjI4ODggMTA0LjM2OSAwIDAgLTUxLjI4ODh6Ii8+DQogIDxwYXRoIGZpbGw9IndoaXRlIiBkPSJNNjA1LjU1IDUwNi4wMDNjNDUuNzk0NSwwIDgyLjg5MjgsLTM3LjA5NzIgODIuODkyOCwtODIuOTAxMWwwIC0xNDIuMDRjMCwtNDUuNzk0NSAtMzcuMDk4MywtODIuODkxNyAtODIuODkyOCwtODIuODkxN2wtNDMwLjQ1MSAwIDAgNDgxLjc0IDEwNC4zNjEgMCAwIC0zOTguOTEyIDI4My44OSAwYzExLjQyNTEsMCAyMC42OTUzLDkuMjc4NDEgMjAuNjk1MywyMC43MzE3bDAgMTAwLjY0YzAsMTEuNDYxNiAtOS4yNzAxNywyMC43MzE3IC0yMC42OTUzLDIwLjczMTdsLTE3NC43NDQgMCAwIDgyLjkwMTEgMTk1LjQzOSAxNzQuNDUyIDE0Ni4yNDMgMCAtMjA2LjY3NSAtMTc0LjQ1MiA4MS45MzY1IDB6Ii8+DQogIDxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMTMwMi4zIDQ5Mi45MDJsMTA1LjIzNCAtMjAxLjUwNyAxMDUuMjI0IDIwMS41MDcgLTIxMC40NTggMHptMzA4LjA4NyAxODcuMDA3bDEyMS4yNzIgMCAtMjcxLjk0NSAtNDgxLjc0IC0xMDQuMzk3IDAgLTI3MS45MTggNDgxLjc0IDEyMS4yODIgMCA1NC4zNjM2IC0xMDQuMDc5IDI5Ni45OCAwIDU0LjM2MzYgMTA0LjA3OXoiLz4NCiA8L2c+DQo8L3N2Zz4NCg==" opacity="0" preserveAspectRatio="xMidYMid meet"><animate attributeName="opacity" begin="3.2s" dur="14.2s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6761;0.7676;0.9085;1.0000;1.0000" values="0;0;1;1;0;0"/></image>
 <circle cx="1030" cy="66" r="4" fill="#ef4444"><animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/></circle>
 <text x="1040" y="70" font-size="12" fill="#ef4444" font-family="SFMono-Regular, Consolas, monospace" font-weight="600">LIVE</text>
-<rect x="1042.573" y="80" width="117.4" height="24" rx="12" fill="#10B981" opacity="0.15" stroke="#10B981"/>
-<text x="1081.3" y="96" font-size="13" fill="#10B981" font-family="SFMono-Regular, Consolas, monospace" text-anchor="middle" font-weight="600">@gudshuis</text>
-<text x="500" y="60" font-size="16" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace" font-weight="600">SYSTEM.INFO</text>
+<rect x="1042.573" y="80" width="117.4" height="24" rx="12" fill="#15803D" opacity="0.15" stroke="#15803D"/>
+<text x="1081.3" y="96" font-size="13" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace" text-anchor="middle" font-weight="600">@gudshuis</text>
+<text x="500" y="60" font-size="16" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace" font-weight="600">SYSTEM.INFO</text>
 <line x1="500" y1="68" x2="1140" y2="68" stroke="#d0d7de"/>
-<text x="500" y="122" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Subject</text>
+<text x="500" y="122" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Subject</text>
 <line x1="542.4" y1="118" x2="1079.1" y2="118" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="122" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="54.9" lengthAdjust="spacingAndGlyphs">Arun Malve</text>
-<text x="500" y="150" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Role</text>
+<text x="500" y="150" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Role</text>
 <line x1="526.0" y1="146" x2="903.4" y2="146" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="150" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="230.6" lengthAdjust="spacingAndGlyphs">AI / Cloud / Platform / DevSecOps Engineer</text>
-<text x="500" y="178" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Origin</text>
+<text x="500" y="178" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Origin</text>
 <line x1="536.9" y1="174" x2="1079.1" y2="174" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="178" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="54.9" lengthAdjust="spacingAndGlyphs">London, UK</text>
-<text x="500" y="206" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Education</text>
+<text x="500" y="206" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Education</text>
 <line x1="553.4" y1="202" x2="974.8" y2="202" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="206" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="159.2" lengthAdjust="spacingAndGlyphs">Master's (Advanced Computers)</text>
-<text x="500" y="234" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Status</text>
+<text x="500" y="234" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Status</text>
 <line x1="536.9" y1="230" x2="969.3" y2="230" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="234" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="164.7" lengthAdjust="spacingAndGlyphs">Building + Learning + Shipping</text>
-<text x="500" y="262" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">ToolChain</text>
+<text x="500" y="262" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">ToolChain</text>
 <line x1="553.4" y1="258" x2="941.8" y2="258" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="262" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="192.2" lengthAdjust="spacingAndGlyphs">kubectl - Terraform - VS Code - Git</text>
-<text x="500" y="290" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Core.Lang</text>
+<text x="500" y="290" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Core.Lang</text>
 <line x1="553.4" y1="286" x2="952.8" y2="286" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="290" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="181.2" lengthAdjust="spacingAndGlyphs">Python - Bash - PowerShell - YAML</text>
-<text x="500" y="318" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Core.IaC</text>
+<text x="500" y="318" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Core.IaC</text>
 <line x1="547.9" y1="314" x2="980.2" y2="314" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="318" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="153.8" lengthAdjust="spacingAndGlyphs">Terraform - Pulumi - Ansible</text>
-<text x="500" y="346" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Core.CI/CD</text>
+<text x="500" y="346" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Core.CI/CD</text>
 <line x1="558.9" y1="342" x2="925.3" y2="342" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="346" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="208.7" lengthAdjust="spacingAndGlyphs">GitHub Actions - Azure DevOps - ArgoCD</text>
-<text x="500" y="374" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Core.Infra</text>
+<text x="500" y="374" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Core.Infra</text>
 <line x1="558.9" y1="370" x2="930.8" y2="370" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="374" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="203.2" lengthAdjust="spacingAndGlyphs">Kubernetes - Docker - Proxmox - Istio</text>
-<text x="500" y="402" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Core.AI</text>
+<text x="500" y="402" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Core.AI</text>
 <line x1="542.4" y1="398" x2="963.8" y2="398" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="402" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="170.2" lengthAdjust="spacingAndGlyphs">MCP - RAG - LLM Agents - Claude</text>
-<text x="500" y="430" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Grid.Mail</text>
+<text x="500" y="430" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Grid.Mail</text>
 <line x1="553.4" y1="426" x2="1029.7" y2="426" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="430" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="104.3" lengthAdjust="spacingAndGlyphs">arundilse@gmail.com</text>
-<text x="500" y="458" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Grid.LinkedIn</text>
+<text x="500" y="458" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Grid.LinkedIn</text>
 <line x1="575.4" y1="454" x2="1062.6" y2="454" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="458" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="71.4" lengthAdjust="spacingAndGlyphs">/in/arunmalve</text>
-<text x="500" y="486" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Grid.YouTube</text>
+<text x="500" y="486" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Grid.YouTube</text>
 <line x1="569.9" y1="482" x2="1084.6" y2="482" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="486" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="49.4" lengthAdjust="spacingAndGlyphs">@gudshuis</text>
-<text x="500" y="514" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Grid.Instagram</text>
+<text x="500" y="514" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Grid.Instagram</text>
 <line x1="580.9" y1="510" x2="1095.6" y2="510" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="514" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="38.4" lengthAdjust="spacingAndGlyphs">@malve_</text>
-<text x="500" y="542" font-size="17" fill="#0891B2" font-family="SFMono-Regular, Consolas, monospace">Grid.Medium</text>
+<text x="500" y="542" font-size="17" fill="#15803D" font-family="SFMono-Regular, Consolas, monospace">Grid.Medium</text>
 <line x1="564.4" y1="538" x2="1084.6" y2="538" stroke="#d0d7de" stroke-dasharray="1,3"/>
 <text x="1140" y="542" font-size="17" fill="#24292f" font-family="SFMono-Regular, Consolas, monospace" font-weight="500" text-anchor="end" textLength="49.4" lengthAdjust="spacingAndGlyphs">@gudshuis</text>
 </svg>
