@@ -19,7 +19,7 @@ import common_dither as cd
 LOGOS_DIR = "/Users/arun/Documents/VScode/Proxmox-kubernetes/Cluster-Overview/Infra/Baigan-Platform/dist/assets/logos"
 LOGO_FILES = [
     os.path.join(LOGOS_DIR, "kubernetes/kubernetes.svg"),
-    "assets/mcp-logo.png",
+    "assets/mcp-icon.svg",
     os.path.join(LOGOS_DIR, "ai/rag.svg"),
 ]
 LOGO_LABELS = ["Kubernetes", "MCP", "RAG"]
