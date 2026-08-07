@@ -1,0 +1,28 @@
+# Local test/preview scaffolding — not needed in the published repo
+preview.html
+_banner_test.html
+_loop_test.html
+
+# Intermediate photo-prep outputs (regeneratable via scripts/02_prep_photo.py)
+prepped-crop.png
+prepped-dark.png
+prepped-light.png
+
+# Standalone portrait-only SVG previews (superseded by banner-dark.svg / banner-light.svg)
+dark.svg
+light.svg
+dark-static.svg
+dark-static.svg.png
+light-static.svg
+
+# Quick Look thumbnail renders used only for local verification
+*.svg.png
+!light-static.svg.png
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
