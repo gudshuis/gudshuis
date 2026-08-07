@@ -1,10 +1,10 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg">
-  <img src="./light-static.svg.png" alt="Arun Malve" width="100%">
-</picture>
+<img src="./banner-light.svg" alt="Arun Malve" width="100%">
+
+<br><br>
+
+<img src="./assets/gudshuis-logo.gif" alt="gudshuis" width="120">
 
 </div>
 
@@ -12,7 +12,7 @@
 
 <div align="center">
 
-### Connect
+### <img src="https://cdn.simpleicons.org/rss/6366F1" width="24" valign="middle"> Connect
 
 <a href="https://www.linkedin.com/in/arunmalve/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
 <a href="https://www.youtube.com/@gudshuis" target="_blank"><img src="https://img.shields.io/badge/YouTube-6D28D9?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>&nbsp;&nbsp;
@@ -23,7 +23,7 @@
 
 ---
 
-### Stack
+### <img src="https://cdn.simpleicons.org/stackshare/7C3AED" width="24" valign="middle"> Stack
 
 <!--
   github-readme-stats.vercel.app and github-profile-trophy.vercel.app
@@ -142,7 +142,7 @@
 
 ---
 
-### Projects
+### <img src="https://cdn.simpleicons.org/github/6366F1" width="24" valign="middle"> Projects
 
 <details open>
 <summary><b>Homelab AI-Ops Platform — Proxmox + Kubernetes + AI Agent</b></summary>
@@ -157,7 +157,7 @@ platform-engineering practice.
 
 | | |
 |---|---|
-| **Stack** | Kubernetes · Proxmox · Argo CD · Terraform · HashiCorp Vault · External Secrets Operator · Cilium/Flannel · Istio |
+| **Stack** | <img src="https://cdn.simpleicons.org/kubernetes/6366F1" width="18" valign="middle"> Kubernetes · <img src="https://cdn.simpleicons.org/proxmox/6366F1" width="18" valign="middle"> Proxmox · <img src="https://cdn.simpleicons.org/argo/6366F1" width="18" valign="middle"> Argo CD · <img src="https://cdn.simpleicons.org/terraform/6366F1" width="18" valign="middle"> Terraform · <img src="https://cdn.simpleicons.org/vault/6366F1" width="18" valign="middle"> HashiCorp Vault · External Secrets Operator · Cilium/Flannel · <img src="https://cdn.simpleicons.org/istio/6366F1" width="18" valign="middle"> Istio |
 | **Scale** | 3-node cluster, 39 tracked components across GitOps, storage, security, and AI serving layers |
 | **Performance** | Prometheus + Grafana + Loki observability stack; KEDA event-driven autoscaling |
 | **Security** | Kyverno policy-as-code, Falco runtime detection, Trivy vulnerability scanning, Vault-backed secrets, default-deny NetworkPolicy baseline |
@@ -172,81 +172,14 @@ platform-engineering practice.
 
 ---
 
-### Experience
-
-<!-- TODO: real job history required — company names, dates, and scope
-     of work can't be fabricated. Fill in and I'll format it. -->
-
-<details>
-<summary><b>Job Title — Company Name</b> <sub>(Date Range)</sub></summary>
-
-<br>
-
-Professional description goes here.
-
-**Scope of work**
-- Bullet point
-- Bullet point
-
-`Skill tag` `Skill tag` `Skill tag`
-
-</details>
-
----
-
-### Achievements
-
-<!-- TODO: real recognitions required. -->
+### <img src="https://cdn.simpleicons.org/github/39D353" width="24" valign="middle"> GitHub Analytics
 
 <div align="center">
 
-| Recognition | Details |
-|---|---|
-| — | — |
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=gudshuis&show_icons=true&hide_rank=true&theme=transparent&bg_color=0A101F&title_color=39D353&icon_color=39D353&text_color=C9D1D9&border_color=30363D" width="49%">
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gudshuis&layout=compact&hide_rank=true&theme=transparent&bg_color=0A101F&title_color=39D353&text_color=C9D1D9&border_color=30363D" width="49%">
 
-</div>
-
----
-
-### Certifications
-
-<!-- TODO: add real certification badges/links per provider. -->
-
-**AWS**
-
-<!-- e.g. <img src="https://img.shields.io/badge/AWS_Certified_Solutions_Architect-4F46E5?style=for-the-badge&logo=amazonaws&logoColor=white"> -->
-
-**Oracle**
-
-**NPTEL**
-
-**Cisco**
-
----
-
-### Coding Profiles
-
-<!-- TODO: replace placeholder links with your real handles -->
-
-<div align="center">
-
-<a href="https://leetcode.com/REPLACE_ME" target="_blank"><img src="https://img.shields.io/badge/LeetCode-4338CA?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"></a>&nbsp;&nbsp;
-<a href="https://www.geeksforgeeks.org/user/REPLACE_ME" target="_blank"><img src="https://img.shields.io/badge/GeeksforGeeks-4338CA?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks"></a>&nbsp;&nbsp;
-<a href="https://www.hackerrank.com/REPLACE_ME" target="_blank"><img src="https://img.shields.io/badge/HackerRank-4338CA?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank"></a>&nbsp;&nbsp;
-<a href="https://www.codechef.com/users/REPLACE_ME" target="_blank"><img src="https://img.shields.io/badge/CodeChef-4338CA?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef"></a>
-
-</div>
-
----
-
-### GitHub Analytics
-
-<div align="center">
-
-<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=gudshuis&show_icons=true&hide_rank=true&theme=transparent&title_color=7C3AED&icon_color=6366F1&text_color=24292f&border_color=d0d7de" width="49%">
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gudshuis&layout=compact&hide_rank=true&theme=transparent&title_color=7C3AED&text_color=24292f&border_color=d0d7de" width="49%">
-
-<img src="https://streak-stats.demolab.com/?user=gudshuis&theme=default&hide_border=true&background=FFFFFF&ring=7C3AED&fire=6366F1&currStreakLabel=4338CA" width="100%">
+<img src="https://streak-stats.demolab.com/?user=gudshuis&hide_border=true&background=0A101F&ring=39D353&fire=39D353&currStreakLabel=39D353&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E&stroke=30363D" width="100%">
 
 </div>
 
@@ -255,27 +188,17 @@ Professional description goes here.
 
 ---
 
-### GitHub Trophies
+### <img src="https://cdn.simpleicons.org/github/39D353" width="24" valign="middle"> Contribution Activity
 
 <div align="center">
 
-<img src="https://github-trophies.vercel.app/?username=gudshuis&theme=algolia&no-frame=true&margin-w=8&column=7" width="100%">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=gudshuis&bg_color=0A101F&color=39D353&line=39D353&point=C9D1D9&hide_border=true" width="100%">
 
 </div>
 
 ---
 
-### Contribution Activity
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gudshuis&theme=minimal&color=7C3AED&line=6366F1&point=4338CA&hide_border=true" width="100%">
-
-</div>
-
----
-
-### Contribution Snake
+### <img src="https://cdn.simpleicons.org/github/6366F1" width="24" valign="middle"> Contribution Snake
 
 <div align="center">
 
@@ -293,7 +216,7 @@ Professional description goes here.
 
 ---
 
-### Current Focus
+### <img src="https://cdn.simpleicons.org/yaml/6366F1" width="24" valign="middle"> Current Focus
 
 ```yaml
 Learning:
