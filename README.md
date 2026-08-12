@@ -8,13 +8,6 @@
 
 <br><br>
 
-<!-- engineering-orbit.svg is ~2.5MB — worth knowing it adds real weight
-     to the README's initial load if that matters to you. Optimize
-     (svgo) or downscale if load time becomes a concern. -->
-<img src="./assets/engineering-orbit.svg" alt="Engineering skills orbit" width="480">
-
-<br><br>
-
 <img src="./assets/gudshuis-logo.gif" alt="gudshuis" width="120">
 
 </div>

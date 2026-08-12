@@ -1,10 +1,9 @@
-"""Assemble the full banner: terminal window, VISUAL.MAP portrait panel,
-SYSTEM.INFO readout, LIVE badge, handle pill, and the portrait<->logo loop.
+"""Assemble the full banner: terminal window, VISUAL.MAP orbit panel,
+SYSTEM.INFO readout, LIVE badge, and handle pill.
 
-Simplification vs. the master prompt spec (flagged honestly): the loop uses
-a whole-portrait / whole-logo crossfade with a small drift, not the full
-per-dot optimal-transport traveler swarm. That traveler-matching system is
-a substantially larger build; this gives a working, good-looking loop now.
+VISUAL.MAP previously held a dithered self-portrait that crossfaded with
+a small logo loop; that panel now embeds the static engineering-orbit.svg
+skills graphic instead, clipped to the same frame.
 
 Usage: python 04_build_banner.py --mode dark|light --out banner-dark.svg
 """
@@ -12,29 +11,6 @@ import argparse
 import base64
 import mimetypes
 import os
-
-from PIL import Image
-import common_dither as cd
-
-LOGOS_DIR = "/Users/arun/Documents/VScode/Proxmox-kubernetes/Cluster-Overview/Infra/Baigan-Platform/dist/assets/logos"
-LOGO_FILES = [
-    os.path.join(LOGOS_DIR, "kubernetes/kubernetes.svg"),
-    "assets/mcp-icon.svg",
-    os.path.join(LOGOS_DIR, "ai/rag.svg"),
-    "assets/anthropic-icon.svg",
-]
-LOGO_LABELS = ["Kubernetes", "MCP", "RAG", "Anthropic"]
-
-# portrait: 3.0s hold, then 4 logos. Each logo's fade-out window IS the next
-# logo's fade-in window (shared, not additive) — so total length is
-# 7.6 + (n-1)*3.3, not a simple sum of per-logo durations.
-LOGO_WINDOWS = [
-    (3.0, 4.3, 6.3, 7.6),
-    (6.3, 7.6, 9.6, 10.9),
-    (9.6, 10.9, 12.9, 14.2),
-    (12.9, 14.2, 16.2, 17.5),
-]
-LOOP_DUR = LOGO_WINDOWS[-1][-1]
 
 WIDTH, HEIGHT = 1180, 610
 PORTRAIT_BOX = (40, 90, 448, 560)  # x0,y0,x1,y1 inside the window
@@ -104,75 +80,16 @@ def data_uri(path: str) -> str:
     return f"data:{mime};base64,{b64}"
 
 
-def build_portrait_group(prepped_png: str, pal: dict, box, invert: bool) -> str:
+def build_orbit_panel(box) -> str:
     x0, y0, x1, y1 = box
     box_w, box_h = x1 - x0, y1 - y0
-    img = Image.open(prepped_png)
-    mask = cd.dither(img, invert=invert)
-    dots = cd.dots_from_mask(mask)
-
-    import random
-    n_groups = 60
-    intro_span = 2.0
-    group_dur = 1.2
-    delays = {}
-    for gi in range(n_groups):
-        group_delay = (gi / n_groups) * intro_span
-        for i in range(gi, len(dots), n_groups):
-            delays[i] = group_delay + random.Random(i).uniform(-0.05, 0.05)
-
-    path_by_delay = {}
-    for i, (x, y) in enumerate(dots):
-        key = round(delays[i], 3)
-        path_by_delay.setdefault(key, []).append((x, y))
-
-    parts = [
-        f'<g id="portraitDots">',
-        f'<svg x="{x0}" y="{y0}" width="{box_w}" height="{box_h}" '
-        f'viewBox="0 0 {cd.GRID_W} {cd.GRID_H}" preserveAspectRatio="xMidYMid meet">',
-        f'<style>path {{ fill: {pal["portrait"]}; }}</style>',
-    ]
-    for delay, pts in sorted(path_by_delay.items()):
-        d_attr = "".join(f"M{x} {y}h1v1h-1Z" for x, y in pts)
-        parts.append(
-            f'<path d="{d_attr}" shape-rendering="crispEdges" opacity="0">'
-            f'<animate attributeName="opacity" from="0" to="1" '
-            f'begin="{max(delay,0):.3f}s" dur="{group_dur}s" fill="freeze"/>'
-            f'</path>'
-        )
-    parts.append("</svg>")
-
-    # Loop: whole-portrait fade out/in, composited with the per-dot intro above.
-    loop_dur = LOOP_DUR
-    last_a2, last_a3 = LOGO_WINDOWS[-1][2], LOGO_WINDOWS[-1][3]
-    kt = [0, 3.0/loop_dur, 4.3/loop_dur, last_a2/loop_dur, last_a3/loop_dur, 1.0]
-    vals = "1;1;0;0;1;1"
-    parts.append(
-        f'<animate attributeName="opacity" begin="3.2s" dur="{loop_dur}s" '
-        f'repeatCount="indefinite" calcMode="linear" '
-        f'keyTimes="{";".join(f"{k:.4f}" for k in kt)}" values="{vals}"/>'
-    )
-    parts.append("</g>")
-    return "\n".join(parts), len(dots)
-
-
-def build_logo_layer(logo_path: str, idx: int, box) -> str:
-    x0, y0, x1, y1 = box
-    box_w, box_h = x1 - x0, y1 - y0
-    uri = data_uri(logo_path)
-    pad = box_w * 0.18
-    loop_dur = LOOP_DUR
-    a0, a1, a2, a3 = LOGO_WINDOWS[idx]
-    kt = [0, a0/loop_dur, a1/loop_dur, a2/loop_dur, a3/loop_dur, 1.0]
-    vals = "0;0;1;1;0;0"
+    uri = data_uri("assets/engineering-orbit.svg")
     return (
-        f'<image x="{x0+pad:.1f}" y="{y0+pad:.1f}" width="{box_w-2*pad:.1f}" '
-        f'height="{box_h-2*pad:.1f}" href="{uri}" opacity="0" '
-        f'preserveAspectRatio="xMidYMid meet">'
-        f'<animate attributeName="opacity" begin="3.2s" dur="{loop_dur}s" '
-        f'repeatCount="indefinite" calcMode="linear" '
-        f'keyTimes="{";".join(f"{k:.4f}" for k in kt)}" values="{vals}"/>'
-        f'</image>'
+        f'<clipPath id="orbitClip"><rect x="{x0}" y="{y0}" width="{box_w}" '
+        f'height="{box_h}" rx="6"/></clipPath>'
+        f'<image x="{x0}" y="{y0}" width="{box_w}" height="{box_h}" '
+        f'href="{uri}" preserveAspectRatio="xMidYMid slice" '
+        f'clip-path="url(#orbitClip)"/>'
     )
 
 
@@ -211,13 +128,8 @@ def build_info_panel(pal: dict, panel_box) -> str:
 
 def build_banner(mode: str) -> str:
     pal = PALETTE[mode]
-    prepped = "prepped-dark.png" if mode == "dark" else "prepped-light.png"
-    invert = mode == "dark"
 
-    portrait_svg, n_dots = build_portrait_group(prepped, pal, PORTRAIT_BOX, invert)
-    logo_layers = "\n".join(
-        build_logo_layer(path, i, PORTRAIT_BOX) for i, path in enumerate(LOGO_FILES)
-    )
+    orbit_svg = build_orbit_panel(PORTRAIT_BOX)
 
     info_panel_box = (500, 60, WIDTH - 40, HEIGHT - 40)
     info_svg = build_info_panel(pal, info_panel_box)
@@ -244,8 +156,7 @@ def build_banner(mode: str) -> str:
         f'<text x="{PORTRAIT_BOX[0]}" y="{PORTRAIT_BOX[1]-14}" font-size="{HEADER_FONT}" '
         f'fill="{pal["chrome"]}" font-family="SFMono-Regular, Consolas, monospace" '
         f'font-weight="600">VISUAL.MAP</text>',
-        portrait_svg,
-        logo_layers,
+        orbit_svg,
         # LIVE badge
         f'<circle cx="{WIDTH-150}" cy="66" r="4" fill="#ef4444">'
         f'<animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/>'
@@ -261,7 +172,6 @@ def build_banner(mode: str) -> str:
         info_svg,
         "</svg>",
     ]
-    print(f"[{mode}] portrait dots: {n_dots}")
     return "\n".join(parts)
 
 
