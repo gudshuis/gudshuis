@@ -104,9 +104,9 @@ def build_info_panel(pal: dict, panel_box) -> str:
     for i, (label, value) in enumerate(FIELDS):
         y = top + i * ROW_SPACING
         label_w = len(label) * CHAR_W * 0.62
-        value_w = min(len(value) * CHAR_W * 0.62, panel_w * 0.62)
+        value_w_est = min(len(value) * CHAR_W * 0.62, panel_w * 0.62)
         label_end = x0 + label_w + 4
-        value_start = x1 - value_w
+        value_start = x1 - value_w_est
         esc = lambda s: s.replace("&", "&amp;").replace("<", "&lt;")
         parts.append(
             f'<text x="{x0}" y="{y}" font-size="{ROW_FONT}" fill="{pal["label"]}" '
@@ -117,11 +117,12 @@ def build_info_panel(pal: dict, panel_box) -> str:
                 f'<line x1="{label_end:.1f}" y1="{y-4}" x2="{value_start-6:.1f}" y2="{y-4}" '
                 f'stroke="{pal["muted"]}" stroke-dasharray="1,3"/>'
             )
+        # Same font-family/size/weight as the label — no textLength squeeze,
+        # which was distorting/dimming the glyphs on some SVG renderers.
         parts.append(
             f'<text x="{x1}" y="{y}" font-size="{ROW_FONT}" fill="{pal["text"]}" '
-            f'font-family="SFMono-Regular, Consolas, monospace" font-weight="500" '
-            f'text-anchor="end" '
-            f'textLength="{value_w:.1f}" lengthAdjust="spacingAndGlyphs">{esc(value)}</text>'
+            f'font-family="SFMono-Regular, Consolas, monospace" '
+            f'text-anchor="end">{esc(value)}</text>'
         )
     return "\n".join(parts)
 
